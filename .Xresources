@@ -1,0 +1,117 @@
+!
+!    ▖▖
+!    ▚▘▛▘█▌▛▘▛▌▌▌▛▘▛▘█▌▛▘
+!  ▗ ▌▌▌ ▙▖▄▌▙▌▙▌▌ ▙▖▙▖▄▌
+!
+!  URxvt, XTerm, XScreenSaver configuration
+!
+
+#define geo 115x24+366+209
+
+! Dracula Xresources palette
+*.foreground: #F8F8F2
+*.background: #2F343F
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
+
+!URxvt*font:     xft:M+ 2m medium:pixelsize=10:antialias=true:hinting=true
+!URxvt*font:     xft:Source Code Pro:Bold:pixelsize=9:antialias=true:hinting=true
+!URxvt*font:     xft:Hack:Bold:pixelsize=9:antialias=true:hinting=true
+URxvt*font:     xft:System San Francisco Display:pixelsize=13:antialias=true:hinting=true
+
+URxvt.termName:             rxvt-unicode
+URxvt.geometry:             geo
+!URxvt.iconFile:            /usr/share/icons/Tango/32x32/apps/gnome-terminal.png
+URxvt.internalBorder:       22
+!URxvt.transparent:         true
+!URxvt.shading:             20
+!URxvt.fadecolor:           #0c0c0c
+!URxvt.fading:              30
+!URxvt.depth:               32
+URxvt.scrollBar:            false
+URxvt.scrollBar_right:      false
+URxvt.saveLine:             10000
+URxvt.iso14755:             false
+URxvt.iso14755_52:          false
+URxvt.letterSpace:          -4
+!URxvt.lineSpace:           1
+URxvt.cursorUnderline:      true
+URxvt.cursorBlink:	    1
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+URxvt.loginShell:           true
+URxvt.perl-lib:             /home/blackcat/.urxvt/urxvt-perls
+URxvt.perl-ext-common:      default,clipboard,keyboard-select,url-select,resize-font
+URxvt.clipboard.autocopy:   true
+
+! Keybind
+URxvt.keysym.Control-Alt-C: perl:clipboard:copy
+URxvt.keysym.Control-Alt-V: perl:clipboard:paste
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.C-Escape:      perl:keyboard-select:activate
+URxvt.keysym.C-u:           perl:url-select:select_next
+URxvt.keysym.Home:          \033[1~
+URxvt.keysym.End:           \033[4~
+URxvt.keysym.KP_Home:       \033[1~
+URxvt.keysym.KP_End:        \033[4~
+URxvt.resize-font.smaller:  C-Down
+URxvt.resize-font.bigger:   C-Up
+
+! Xft
+Xft.antialias:  true
+Xft.autohint:   true
+Xft.dpi:        100
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+
+!XTerm*faceName:     xft:Hack:Bold:antialias=true:pixelsize=9
+XTerm*faceName:     xft:System San Francisco Display:antialias=true:pixelsize=11
+!XTerm*font:        -nil-profont-medium-r-normal--10-100-72-72-c-50-iso8859-1
+
+XTerm*termName:         xterm-256color
+XTerm*vt100*geometry:   geo
+XTerm*scrollBar:        False
+XTerm*internalBorder:   20
+XTerm*externalBorder:   0
+XTerm*saveLines:        5000
+XTerm*fastScroll:       true
+XTerm*jumpScroll:       true
+XTerm*loginshell:       true
+XTerm*multiScroll:      true
+XTerm*utmpInhibit:      true
+XTerm*charClass:        33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+! Fonts & locale
+XTerm*locale:       true
+XTerm*utf8:         true
+XTerm*utf8Title:    true
+XTerm*fontMenu*fontdefault*Label:Default
+XTerm*xftAntialias: true
+
+!mouse selection to copy, Ctrl-V, also Shift+Insert
+XTerm*VT100.Translations: #override \
+    <Btn1Up>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+    Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0
+
+! xscreensaver
+xscreensaver*timeout:       5
+xscreensaver*lock:          true
+xscreensaver*lockTimeout:   5
+xscreensaver*mode:          blank
