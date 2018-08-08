@@ -11,4 +11,6 @@ set ignorecase			"ignore case when search
 set smartcase			"ignore case when searching in lowercase
 set showmatch			"show matching paranthesis
 set incsearch			"show search choices when searching
-set guifont=System\ San\ Francisco\ Display\ 11
+set autoindent			"auto indents
+
+set guifont=SFNS\ Display\ Regular:h11
