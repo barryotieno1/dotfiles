@@ -1,0 +1,22 @@
+rofi.font: System San Francisco Display 18
+rofi.width: 2560
+rofi.columns: 1;
+rofi.padding: 800
+rofi.opacity: 85
+rofi.bw: 0
+rofi.eh: 1
+rofi.lines: 6
+rofi.color-enabled:true
+
+!		   'background'   'border' 'separator'
+rofi.color-window: #DD404552, 	  #393939, #00383c4a
+
+!		   'bg'           'fg'     'bgalt'        'hlbg'   'hlfg'
+rofi.color-normal: #00383c4a, #ffffff, #00383c4a, #00383c4a, #5294e2
+rofi.color-active: #00383c4a, #268bd2, #00383c4a, #00383c4a, #205171
+rofi.color-urgent: #00383c4a, #f3843d, #00383c4a, #00383c4a, #ffc39c
+
+rofi.drun-icon-theme: Arc
+rofi.show-icons: true
+rofi.seperator-style: none
+rofi.hide-scrollbar: true
