@@ -166,6 +166,8 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 #forced workspaces
 assign [class="URxvt"] $workspace1
 for_window [class="Google-chrome" instance="https://mail.google.com/tasks/canvas"] move to workspace $workspace8
+assign [class="Google-chrome"] $workspace2
+for_window [class="Google-chrome"] layout tabbed
 assign [class="Thunderbird"] $workspace9
 for_window [class="Spotify"] move to workspace $workspace10 
 
