@@ -300,7 +300,7 @@ label = %date% %time%
 type = internal/volume
 
 format-volume = <label-volume> 
-label-volume =  %percentage%%
+label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
