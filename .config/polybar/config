@@ -68,7 +68,7 @@ font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=11:antialias=true:hinting=tr
 font-5 = "Font Awesome 5 Brands:pixelsize=11:antialias=true:hinting=true;1"
 
 
-modules-left = bspwm i3 spotify
+modules-left = i3 spotify
 modules-center = date
 modules-right = xbacklight volume battery3 
 
@@ -147,24 +147,36 @@ label-mode-padding = 0
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
-label-focused =  
+label-focused = "%icon% "
 label-focused-background = ${module/bspwm.label-occupied-padding}
-label-focused-foreground = ${colors.secondary}
+label-focused-foreground = ${colors.primary}
 ;label-focused-overline = ${module/bspwm.label-focused-underline}
-label-focused-underline = ${colors.secondary}
-label-focused-padding = ${module/bspwm.label-focused-padding}
+;label-focused-underline = ${colors.primary}
+label-focused-padding = 1
 
-label-unfocused =  %index%
-label-unfocused-padding = ${module/bspwm.label-occupied-padding}
+label-unfocused = "%icon% "
+label-unfocused-padding = 1
 
-label-visible = V %index%
+label-visible = "%icon% "
 label-visible-background = ${self.label-focused-background}
 ;label-visible-underline = ${self.label-focused-background}
-label-visible-padding = ${self.label-focused-padding}
+label-visible-padding = 1
 
-label-urgent = %index%!
-label-urgent-background = ${module/bspwm.label-urgent-background}
-label-urgent-padding = ${module/bspwm.label-urgent-padding}
+label-urgent = "%icon% "
+label-urgent-background = ${colors.background}
+label-urgent-foreground = ${colors.secondary}
+label-urgent-padding = 1
+
+ws-icon-0 = 10; 
+ws-icon-1 = 1;
+ws-icon-2 = 2;
+ws-icon-3 = 3;
+ws-icon-4 = 4;
+ws-icon-5 = 5;
+ws-icon-6 = 6;
+ws-icon-7 = 7; 
+ws-icon-8 = 8;
+ws-icon-9 = 9;
 
 [module/mpd]
 type = internal/mpd
@@ -199,7 +211,7 @@ bar-empty-foreground = ${colors.foreground-alt}
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix =" "
+;format-prefix =" "
 format-prefix-foreground = #1db954
 format = <label>
 exec = python3 ~/.config/polybar/spotify_status.py
