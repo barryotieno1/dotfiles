@@ -127,7 +127,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 
-#workspace variables
+#workspace names
 set $workspace1  "1"
 set $workspace2  "2"
 set $workspace3  "3"
@@ -150,6 +150,7 @@ bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
+bindsym XF86Tools workspace $workspace10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -168,6 +169,10 @@ assign [class="URxvt"] $workspace1
 for_window [class="Google-chrome" instance="https://mail.google.com/tasks/canvas"] move to workspace $workspace8
 assign [class="Thunderbird"] $workspace9
 for_window [class="Spotify"] move to workspace $workspace10 
+
+#gnome calculator
+for_window [class="Gnome-calculator"] floating enable
+bindsym XF86Calculator exec --no-startup-id gnome-calculator
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
