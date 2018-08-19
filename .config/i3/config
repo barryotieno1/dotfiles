@@ -263,7 +263,8 @@ exec_always --no-startup-id dropbox start	#Dropbox
 exec_always --no-startup-id compton -f		#Animations
 #exec --no-startup-id xrandr --dpi 110		#Sets scaling on laptop
 exec --no-startup-id spotify			#Launch spotify
+exec --no-startup-id solaar			#Launch logitech unify driver
 exec --no-startup-id thunderbird		#Launch thunderbird
 exec --no-startup-id i3-msg 'workspace $workspace8 ; exec google-chrome-stable --new-window --app=https://mail.google.com/tasks/canvas' #Launch Google Tasks
-exec_always --no-startup-id xrdb ~/.Xresources
+exec_always --no-startup-id xrdb ~/.Xresources	#refresh urxvt terminal settings
 exec --no-startup-id safeeyes -e		#Reminder to take a break
