@@ -42,23 +42,19 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+z exec ~/.screenlayout/docked.sh
 bindsym $mod+z exec ~/.screenlayout/default.sh
 
-# color variables
-set $bg-color 	         #2f343f
+set $bg-color 	         #5294e2
 set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
+set $text-color          #000000
 set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
-set $green 		 #00ff99
-set $black		 #000000
-set $white		 #FFFFFF
-set $arcBlue		 #5294e2
+set $urgent-bg-color     #CC575D
+set $indicator		 $bg-color
 
 # window colors
-#                       border              borderColor        text                 indicator(dir4NextWindow)
-client.focused          $bg-color           $arcBlue	       $black		    $arcBlue
-client.unfocused        $inactive-bg-color  $inactive-bg-color $white               #17fbff
-client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #17fbff
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #17fbff
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          $indicator
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run
@@ -195,10 +191,10 @@ mode "resize" {
         bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        #bindsym Left resize shrink width 10 px or 10 ppt
+        #bindsym Down resize grow height 10 px or 10 ppt
+        #bindsym Up resize shrink height 10 px or 10 ppt
+        #bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
