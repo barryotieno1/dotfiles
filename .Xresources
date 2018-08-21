@@ -111,7 +111,7 @@ XTerm*VT100.Translations: #override \
     Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0
 
 ! xscreensaver
-xscreensaver*timeout:       5
-xscreensaver*lock:          true
-xscreensaver*lockTimeout:   5
-xscreensaver*mode:          blank
+!xscreensaver*timeout:       5
+!xscreensaver*lock:          true
+!xscreensaver*lockTimeout:   5
+!xscreensaver*mode:          blank
