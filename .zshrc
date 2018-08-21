@@ -95,4 +95,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
-alias neofetch='neofetch --source ~/Dropbox/Wallpapers/wallpaper.jpg'
+alias neofetch='neofetch --w3m ~/Dropbox/Wallpapers/wallpaper.jpg'
