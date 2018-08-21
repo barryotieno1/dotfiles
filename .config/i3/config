@@ -236,7 +236,7 @@ bindsym Print exec bash ~/.scripts/scrotScreenshot.sh
 # Lock the screen(works)
 #bindsym $mod+Shift+Delete exec bash ~/.scripts/fuzzy_lock.sh
 #exec --no-startup-id xautolock -time 10 -locker 'bash ~/.scripts/fuzzy_lock.sh' &
-bindsym $mod+Shift+Delete exec betterlockscreen --lock
+bindsym $mod+Shift+Delete exec betterlockscreen --lock dim
 exec --no-startup-id betterlockscreen -u ~/Dropbox/Wallpapers/wallpaper.jpg -b 0.5
 exec --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l' -corners ---- &
 
