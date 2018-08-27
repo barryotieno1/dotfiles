@@ -229,6 +229,12 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Media (Arrow Key Controls)
+bindsym $mod+Down exec playerctl play-pause
+#bindsym XF86AudioPause exec playerctl pause
+bindsym $mod+Right exec playerctl next
+bindsym $mod+Left exec playerctl previous
+
 # Screenshot
 bindsym Print exec bash ~/.scripts/scrotScreenshot.sh
 #bindsym $mod+grave exec bash ~/.scripts/scrotScreenshot.sh
