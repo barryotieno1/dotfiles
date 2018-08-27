@@ -252,7 +252,7 @@ exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
 
 # Battery notification
-exec --no-startup-id bash ~/i3-battery-popup.sh -t 10s -L 10 -l 5 -n &
+exec --no-startup-id bash ~/.scripts/i3-battery-popup.sh -t 10s -L 10 -l 5 -n &
 
 # Sets wallpaper
 exec_always feh --bg-scale /home/barry/Dropbox/Wallpapers/wallpaper.jpg
