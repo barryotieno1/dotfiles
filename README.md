@@ -1,11 +1,4 @@
-# DOT FILES
-# i3wm sierra
+# dotfiles
 
-OS: Ubuntu 18.04
 
-WM: i3GAPS
-
-Bar: Polybar
-
-Term: URXVT
-
+[[https://github.com/barryotieno1/dotfiles/blob/master/img/clean.png|alt=clean]]
