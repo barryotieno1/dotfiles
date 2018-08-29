@@ -1,3 +1,7 @@
-# dotfiles
+# i3wm GAPS : Sierra
 
-![Alt text](img/clean.png?raw=true "Title")
+## clean
+![Alt text](img/clean.png?raw=true "clean desktop image")
+
+## busy
+![Alt text](img/dirty.png?raw=true "busy desktop image")
