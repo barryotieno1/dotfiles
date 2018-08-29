@@ -1,4 +1,3 @@
 # dotfiles
 
-
-[[https://github.com/barryotieno1/dotfiles/blob/master/img/clean.png|alt=clean]]
+![Alt text](img/clean.png?raw=true "Title")
