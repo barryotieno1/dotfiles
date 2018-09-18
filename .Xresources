@@ -31,7 +31,7 @@
 !URxvt*font:     xft:M+ 2m medium:pixelsize=10:antialias=true:hinting=true
 !URxvt*font:     xft:Source Code Pro:Bold:pixelsize=9:antialias=true:hinting=true
 !URxvt*font:     xft:Hack:Bold:pixelsize=9:antialias=true:hinting=true
-URxvt*font:     xft:System San Francisco Display:pixelsize=13:antialias=true:hinting=true
+URxvt*font:     xft:System San Francisco Display:pixelsize=12:antialias=true:hinting=true
 
 URxvt.termName:             rxvt-unicode
 URxvt.geometry:             geo
