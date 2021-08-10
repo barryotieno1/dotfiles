@@ -1,4 +1,4 @@
-# i3wm GAPS : Sierra
+# i3wm GAPS
 
 ## clean
 ![Alt text](img/clean.png?raw=true "clean desktop image")
